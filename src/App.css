@@ -1,0 +1,97 @@
+html {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+body, div#root {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "century gothic";
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  outline: 0;
+}
+
+div#root {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+}
+
+.page {
+  padding: 96px 1em 1em 1em;
+  background: radial-gradient(#f9f9f9, #fafafa);
+}
+
+main.dashboard-page {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  height: 100%;
+  width: 100%;
+}
+
+section.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #fefefe;
+  padding: 4em 1em 2em 1em;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  padding: 1.4em 1em;
+  gap: 1em;
+  font-size: 0.7em;
+  font-family: 'century gothic';
+  font-weight: bold;
+  margin: 0.2em 0;
+  color: #707070 !important;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: calc(100% - 160px);
+  z-index: 10;
+  padding: 1em;
+}
+
+.nav-item-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.avatar {
+  height: 2em;
+  width: 2em;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.navbar > .nav-item-group  .avatar + p {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.page {
+  background: #fafafa;
+}
+
